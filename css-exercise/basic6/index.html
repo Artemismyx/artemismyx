@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Still Life Drawing</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="../assets/favicon.png" />
+    <link rel="stylesheet" href="../main.css" />
+    <h1 >orange</h1>
+    <style>
+      *, body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      #oranges {
+        width: 400px;
+        height: 300px;
+        /* background-color: #e2e2e2; */
+        position: absolute;
+        top: 350px;
+        left: 600px;
+      }
+      #orange-1 {
+        width: 130px;
+        height: 110px;
+        border-radius: 60px / 53px;
+        background-color: rgb(255, 149, 0);
+        position: absolute;
+        bottom: 55px;
+        left: 5px;
+        transition: transform 2s;
+      }
+      #orange-1:hover {
+        transform: scale(1.1, 1.1);
+      }
+     
+      #orange-2 {
+        width: 120px;
+        height: 100px;
+        border-radius: 55px / 47px;
+        background-color: rgb(255, 123, 0);
+        position: absolute;
+        bottom: 25px;
+        left: 63px;
+        transform: rotate(35deg);
+        transform-origin: center;
+        transition: transform 1s;
+        
+      }
+     
+      #orange-3 {
+        width: 120px;
+        height: 90px;
+        border-radius: 55px / 43px;
+        background-color: rgb(255, 163, 0);
+        position: absolute;
+        bottom: 110px;
+        left: 60px;
+        transform: rotate(-35deg);
+        transform-origin: center;
+        transition: transform 1s;
+      }
+      #orange-3:hover {
+        transform: rotate(80deg) translate(180px, -160px);
+      }
+      #orange-4 {
+        width: 120px;
+        height: 105px;
+        border-radius: 63px 63px 50px 50px;
+        background-color: rgb(255, 163, 0);
+        position: absolute;
+        bottom: 35px;
+        right: 0;
+        transition: background-color 10s, transform 10s;
+      }
+      #orange-4:hover {
+        background-color: saddlebrown;
+        transform: scale(0.85, 0.8);
+      }
+
+      
+      #body {
+        width: 100%;
+        height: 80%;
+        /* background-color: cadetblue; */
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      #left {
+        width: 30%;
+        height: 80%;
+        /* background-color: rgba(100, 193, 196, 0.3); */
+        /* border: 2px solid rgb(100, 193, 196); */
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: skewY(20deg);
+        transform-origin: bottom right;
+      }
+      #right {
+        width: 30%;
+        height: 80%;
+        /* background-color: rgba(100, 193, 196, 0.3); */
+        /* border: 2px solid rgb(100, 193, 196); */
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: skewY(-20deg);
+        transform-origin: bottom left;
+      }
+      #middle {
+        width: 40%;
+        height: 80%;
+        /* background-color: rgba(100, 193, 196, 0.3); */
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+      }
+      
+      
+      #connection {
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-bottom: 24px solid rgba(100, 193, 196, 0.2);
+        border-left: 36px solid transparent;
+        border-right: 36px solid transparent;
+      }
+      #neck {
+        width: 40%;
+        height: 10%;
+        /* background-color: rgba(100, 193, 196, 0.3); */
+        border-left: 2px solid rgb(100, 193, 196);
+        border-right: 2px solid rgb(100, 193, 196);
+        box-sizing: border-box;
+        position: absolute;
+        top: 10%;
+        left: 30%;
+      }
+      #mouth {
+        width: 50%;
+        height: 10%;
+        /* background-color: rgba(100, 193, 196, 0.3); */
+        /* border: 2px solid rgb(100, 193, 196); */
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 25%;
+      }
+
+      #middle, #left, #right, #neck, #mouth {
+        background-image: linear-gradient(to left, rgba(100, 193, 196, 0.5), rgba(100, 193, 196, 0.1));
+      }
+      #middle, #left, #right, #mouth {
+        border: 2px solid rgb(100, 193, 196);
+      }
+
+      @keyframes spread-1 {
+        from {transform: rotate(0);}
+        to   {transform: rotate(3deg);}
+      }
+      @keyframes spread-2 {
+        from {transform: rotate(0);}
+        to   {transform: rotate(5deg);}
+      }
+      @keyframes spread-3 {
+        from {transform: rotate(0);}
+        to   {transform: rotate(-2deg);}
+      }
+      @keyframes spread-4 {
+        from {transform: rotate(0);}
+        to   {transform: rotate(-6deg);}
+      }
+      @keyframes spread-5 {
+        from {transform: rotate(0);}
+        to   {transform: rotate(-1deg);}
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div id="glass">
+      <div id="mouth"></div>
+      <div id="neck"></div>
+      <div id="body">
+        <div id="connection"></div>
+        <div id="body-top"></div>
+        <div id="left"></div>
+        <div id="middle"></div>
+        <div id="right"></div>
+      </div>
+    </div>
+
+    <div id="vase">
+      <div id="sticks">
+        <div id="stick-1"></div>
+        <div id="stick-2"></div>
+        <div id="stick-3"></div>
+        <div id="stick-4"></div>
+        <div id="stick-5"></div>
+      </div>
+      <div id="top"></div>
+      <div id="ball"></div>
+      <div id="bottom"></div>
+    </div>
+
+    <div id="oranges">
+      <div id="orange-1">
+        <div id="sticker-1"></div>
+      </div>
+      <div id="orange-2">
+        <div id="sticker-2"></div>
+      </div>
+      <div id="orange-3"></div>
+      <div id="orange-4"></div>
+    </div>
+    
+    
+    
+    
+    <a href="../index.html" id="back">back</a>
+  </body>
+</html>
