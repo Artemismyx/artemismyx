@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box>div{
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .A{
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .B{
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+            color: gainsboro;
+        }
+
+        .A_top{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .A_top span a{
+            display: block;
+            width: 60px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: rgb(193, 186, 186);
+            font-size: 25px;
+
+        }
+
+        .A_title{
+            width: 100%;
+            height: 200px;
+            line-height: 200px;
+            font-size: 150px;
+            margin: 20px 0;
+            
+        }
+
+        .textBox{
+            width: 100%;
+
+        }
+
+        .B>div{
+            width: 100%;
+            height: 100%;
+            display: none;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .textBox{
+            padding-left: 20px;
+            box-sizing: border-box;
+            color: #989090;;
+
+        }
+        .textBox p:hover{
+            color: #4f4747;
+        }
+        .textBox .x{
+            text-indent: 1rem;
+            margin: 10px 0;
+        }
+
+        .Ba p{
+            margin-bottom: 30px;
+        }
+        .Ba h2{
+            margin-bottom: 20px;
+        }
+        .B .Bb{
+            padding: 0;
+
+        }
+
+        .B .Bb img{
+            width:100%;
+        }
+
+        .Bc p{
+            margin-bottom: 30px;
+        }
+        .Bc h2{
+            margin-bottom: 20px;
+        }
+        .Bd{
+            position: relative;
+        }
+        .video {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .video video{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="A">
+            <div class="A_top">
+                <span><a href="">返回</a></span>
+            </div>
+            <h1 class="A_title">
+                声音之间
+            </h1>
+            <div class="textBox">
+                <p>实验影像</p>
+                <p class="x">-笔触声和机构听写</p>
+                <p class="x">-读书声与雨声</p>
+                <p class="x">-键盘声与咖啡馆</p>
+                <p class="x">-三文鱼和指环王</p>
+                <p class="x">-王者与TED</p>
+                <p class="x">-心跳和暴风雪壁炉</p>
+                
+                <p>书籍</p>
+                <p class="x">-书籍2拍摄</p>
+                <p class="x">-总览</p>
+                
+                <p>项目简介</p>
+                <p class="x">-项目简介</p>
+                <p>海报</p>
+                <p class="x">-海报</p>
+            </div>
+        </div>
+        <div class="B">
+            
+            <div class="Bd">
+                <div class="video">
+                        <video src="6月1日(0).mp4" controls></video>
+                </div>
+            </div>
+            <div class="Bd">
+                <div class="video">
+                        <video src="6月1日(1).mp4" controls></video>
+                </div>
+            </div>
+            <div class="Bd">
+                <div class="video">
+                        <video src="6月1日(2).mp4" controls></video>
+                </div>
+            </div>
+            <div class="Bd">
+                <div class="video">
+                        <video src="6月1日(3).mp4" controls></video>
+                </div>
+            </div>
+            <div class="Bd">
+                <div class="video">
+                        <video src="6月1日(4).mp4" controls></video>
+                </div>
+            </div>
+            <div class="Bd">
+                <div class="video">
+                        <video src="6月1日(5).mp4" controls></video>
+                </div>
+            </div>
+            <div class="Bd">
+                <div class="video">
+                        <video src="6月1日(6).mp4" controls></video>
+                </div>
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="书籍/书籍拍摄/IMG_7257.png" alt="" srcset="">
+                <img src="书籍/书籍拍摄/IMG_7258.png" alt="" srcset="">
+                <img src="书籍/书籍拍摄/IMG_7259.png" alt="" srcset="">
+                <img src="书籍/书籍拍摄/IMG_7260.png" alt="" srcset="">
+            </div>
+
+
+            <div class="Bb" style="display: block;">
+                <img src="书籍/总览/1.png" alt="" srcset="">
+                <img src="书籍/总览/2.png" alt="" srcset="">
+                <img src="书籍/总览/3.png" alt="" srcset="">
+                <img src="书籍/总览/4.png" alt="" srcset="">
+                <img src="书籍/总览/5.png" alt="" srcset="">
+                <img src="书籍/总览/6.png" alt="" srcset="">
+                <img src="书籍/总览/7.png" alt="" srcset="">
+                <img src="书籍/总览/8.png" alt="" srcset="">
+                <img src="书籍/总览/9.png" alt="" srcset="">
+                <img src="书籍/总览/10.png" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="项目简介/汇报PRE_01.png" alt="" srcset="">
+                <img src="项目简介/汇报PRE_02.png" alt="" srcset="">
+                <img src="项目简介/汇报PRE_03.png" alt="" srcset="">
+                <img src="项目简介/汇报PRE_04.png" alt="" srcset="">
+                <img src="项目简介/汇报PRE_05.png" alt="" srcset="">
+                <img src="项目简介/汇报PRE_06.png" alt="" srcset="">
+                <img src="项目简介/汇报PRE_07.png" alt="" srcset="">
+                <img src="项目简介/汇报PRE_08.png" alt="" srcset="">
+                <img src="项目简介/汇报PRE_09.png" alt="" srcset="">
+                <img src="项目简介/汇报PRE_10.png" alt="" srcset="">
+                <img src="项目简介/汇报PRE_11.png" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="读英语与雨声海报.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const X = document.querySelectorAll('.x');
+        const divBox = document.querySelectorAll('.B>div');
+
+        for (let i = 0; i < X.length; i++) {
+            X[i].addEventListener('click', function() {
+                for (let j = 0; j < divBox.length; j++) {
+                    divBox[j].style.display = 'none';
+                }
+                if (X[i].textContent === '-笔触声和机构听写') {                      
+                    divBox[0].style.display = 'block';
+                } else if (X[i].textContent === '-读书声与雨声') {
+                    divBox[1].style.display = 'block';
+                } else if (X[i].textContent === '-键盘声与咖啡馆') {
+                    divBox[2].style.display = 'block';
+                } else if (X[i].textContent === '-三文鱼和指环王') {
+                    divBox[3].style.display = 'block';
+                } else if (X[i].textContent === '-王者与TED') {
+                    divBox[4].style.display = 'block';
+                } else if (X[i].textContent === '-心跳和暴风雪壁炉') {
+                    divBox[5].style.display = 'block';
+                } else if (X[i].textContent === '-书籍2拍摄') {
+                    divBox[6].style.display = 'block';
+                } else if (X[i].textContent === '-总览') {
+                    divBox[7].style.display = 'block';
+                } else if (X[i].textContent === '-项目简介') {
+                    divBox[8].style.display = 'block';
+                } else if (X[i].textContent === '-海报') {
+                    divBox[9].style.display = 'block';
+                } 
+            });
+        }
+    </script>
+</body>
+</html>

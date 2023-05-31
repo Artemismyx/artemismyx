@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box>div{
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .A{
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .B{
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+            color: gainsboro;
+        }
+
+        .A_top{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .A_top span a{
+            display: block;
+            width: 60px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: rgb(193, 186, 186);
+            font-size: 25px;
+
+        }
+
+        .A_title{
+            width: 100%;
+            height: 200px;
+            line-height: 200px;
+            font-size: 150px;
+            margin: 20px 0;
+            
+        }
+
+        .textBox{
+            width: 100%;
+
+        }
+
+        .B>div{
+            width: 100%;
+            height: 100%;
+            display: none;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .textBox{
+            padding-left: 20px;
+            box-sizing: border-box;
+            color: #989090;;
+
+        }
+        .textBox p:hover{
+            color: #4f4747;
+        }
+        .textBox .x{
+            text-indent: 1rem;
+            margin: 10px 0;
+        }
+
+        .Ba p{
+            margin-bottom: 30px;
+        }
+        .Ba h2{
+            margin-bottom: 20px;
+        }
+        .B .Bb{
+            padding: 0;
+
+        }
+
+        .B .Bb img{
+            width:100%;
+        }
+
+        .Bc p{
+            margin-bottom: 30px;
+        }
+        .Bc h2{
+            margin-bottom: 20px;
+        }
+        .Bd{
+            position: relative;
+        }
+        .video {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .video video{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="A">
+            <div class="A_top">
+                <span><a href="">返回</a></span>
+            </div>
+            <h1 class="A_title">
+                性别流动
+            </h1>
+            <div class="textBox">
+                <p>一.报告册</p>
+                <p class="x">-报告册</p>
+                <p>二.大幅面海报</p>
+                <p class="x">-大幅面海报</p>
+                <p>三.小幅面海报</p>
+                <p>1.背面</p>
+                <p class="x">-背面</p>
+                <p>2.正面</p>
+                <p class="x">-正面</p>
+                <p>四.小物件</p>
+                <p>1.明信片</p>
+                <p class="x">-明信片1</p>
+                <p class="x">-明信片2</p>
+                <p>2.信件</p>
+                <p class="x">-参考图纸</p>
+                <p class="x">-信封1</p>
+                <p class="x">-信封2</p>
+                <p>3.信纸</p>
+                <p class="x">-信纸1</p>
+                <p class="x">-信纸2</p>
+                <p>五.IMG</p>
+                <p class="x">-IMG</p>
+            </div>
+        </div>
+        <div class="B">
+            <div class="Bb" style="display: block;">
+                <img src="报告册/1.png" alt="" srcset="">
+                <img src="报告册/2.png" alt="" srcset="">
+                <img src="报告册/3.png" alt="" srcset="">
+                <img src="报告册/4.png" alt="" srcset="">
+                <img src="报告册/5.png" alt="" srcset="">
+                <img src="报告册/6.png" alt="" srcset="">
+                <img src="报告册/7.png" alt="" srcset="">
+                <img src="报告册/8.png" alt="" srcset="">
+                <img src="报告册/9.png" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="大幅面海报/1.png" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="小幅面海报/背面/背面.png" alt="" srcset="">
+            </div>
+
+
+            <div class="Bb" style="display: block;">
+                <img src="小幅面海报/正面/小海报1.png" alt="" srcset="">
+                <img src="小幅面海报/正面/小海报2.png" alt="" srcset="">
+                <img src="小幅面海报/正面/小海报3.png" alt="" srcset="">
+                <img src="小幅面海报/正面/小海报4.png" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="小物件/明信片/明信片1/参考图.png" alt="" srcset="">
+                <img src="小物件/明信片/明信片1/反面.png" alt="" srcset="">
+                <img src="小物件/明信片/明信片1/反面.png" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="小物件/明信片/明信片2/参考图.png" alt="" srcset="">
+                <img src="小物件/明信片/明信片2/正面.png" alt="" srcset="">
+                <img src="小物件/明信片/明信片2/反面.png" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="小物件/信封/参考图纸/参考图纸.jpg" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="小物件/信封/信封1/参考图.png" alt="" srcset="">
+                <img src="小物件/信封/信封1/信封women.png" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="小物件/信封/信封2/参考图.png" alt="" srcset="">
+                <img src="小物件/信封/信封2/信封men.png" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="小物件/信纸/信纸1/信纸men正面.png" alt="" srcset="">
+                <img src="小物件/信纸/信纸1/信纸men反面.png" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="小物件/信纸/信纸2/信纸women正面.png" alt="" srcset="">
+                <img src="小物件/信纸/信纸2/信纸women反面.png" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="IMG_6210.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const X = document.querySelectorAll('.x');
+        const divBox = document.querySelectorAll('.B>div');
+
+        for (let i = 0; i < X.length; i++) {
+            X[i].addEventListener('click', function() {
+                for (let j = 0; j < divBox.length; j++) {
+                    divBox[j].style.display = 'none';
+                }
+                if (X[i].textContent === '-报告册') {
+                    divBox[0].style.display = 'block';
+                } else if (X[i].textContent === '-大幅面海报') {
+                    divBox[1].style.display = 'block';
+                } else if (X[i].textContent === '-背面') {
+                    divBox[2].style.display = 'block';
+                } else if (X[i].textContent === '-正面') {
+                    divBox[3].style.display = 'block';
+                } else if (X[i].textContent === '-明信片1') {
+                    divBox[4].style.display = 'block';
+                } else if (X[i].textContent === '-明信片2') {
+                    divBox[5].style.display = 'block';
+                } else if (X[i].textContent === '-参考图纸') {
+                    divBox[6].style.display = 'block';
+                } else if (X[i].textContent === '-信封1') {
+                    divBox[7].style.display = 'block';
+                } else if (X[i].textContent === '-信封2') {
+                    divBox[8].style.display = 'block';
+                } else if (X[i].textContent === '-信纸1') {
+                    divBox[9].style.display = 'block';
+                } else if (X[i].textContent === '-信纸2') {
+                    divBox[10].style.display = 'block';
+                } else if (X[i].textContent === '-IMG') {
+                    divBox[11].style.display = 'block';
+                } 
+            });
+        }
+    </script>
+</body>
+</html>

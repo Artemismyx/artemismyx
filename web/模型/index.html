@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box>div{
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .A{
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .B{
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+            color: gainsboro;
+        }
+
+        .A_top{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .A_top span a{
+            display: block;
+            width: 60px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: rgb(193, 186, 186);
+            font-size: 25px;
+
+        }
+
+        .A_title{
+            width: 100%;
+            height: 200px;
+            line-height: 200px;
+            font-size: 150px;
+            margin: 20px 0;
+            
+        }
+
+        .textBox{
+            width: 100%;
+
+        }
+
+        .B>div{
+            width: 100%;
+            height: 100%;
+            display: none;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .textBox{
+            padding-left: 20px;
+            box-sizing: border-box;
+            color: #989090;;
+
+        }
+        .textBox p:hover{
+            color: #4f4747;
+        }
+        .textBox .x{
+            text-indent: 1rem;
+            margin: 10px 0;
+        }
+
+        .Ba p{
+            margin-bottom: 30px;
+        }
+        .Ba h2{
+            margin-bottom: 20px;
+        }
+        .B .Bb{
+            padding: 0;
+
+        }
+
+        .B .Bb img{
+            width:100%;
+        }
+
+        .Bc p{
+            margin-bottom: 30px;
+        }
+        .Bc h2{
+            margin-bottom: 20px;
+        }
+        .Bd{
+            position: relative;
+        }
+        .video {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .video video{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="A">
+            <div class="A_top">
+                <span><a href="">返回</a></span>
+            </div>
+            <h1 class="A_title">
+                模型
+            </h1>
+            <div class="textBox">
+                <p>金属</p>
+                <p class="x">-金属</p>
+                <p>木材</p>
+                <p class="x">-木材</p>
+                <p>泡沫</p>
+                <p class="x">-泡沫</p>
+                <p>塑料</p>
+                <p class="x">-塑料</p>
+                <p>纸板</p>
+                <p class="x">-纸板</p>
+                <p>主题</p>
+                <p class="x">-主题</p>
+                
+            </div>
+        </div>
+        <div class="B">
+            <div class="Bb" style="display: block;">
+                <img src="金属/IMG_9464.JPG" alt="" srcset="">
+                <img src="金属/IMG_9465.JPG" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="木材/三视图1.jpeg" alt="" srcset="">
+                <img src="木材/三视图2.jpeg" alt="" srcset="">
+                <img src="木材/木材.jpg" alt="" srcset="">
+                <img src="木材/木材2.jpg" alt="" srcset="">
+                <img src="木材/木材3.jpg" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="泡沫/IMG_9060.JPG" alt="" srcset="">
+                <img src="泡沫/IMG_9061.JPG" alt="" srcset="">
+                <img src="泡沫/IMG_9062.JPG" alt="" srcset="">
+                <img src="泡沫/IMG_9066.JPG" alt="" srcset="">
+                <img src="泡沫/IMG_9067.JPG" alt="" srcset="">
+                <img src="泡沫/IMG_9068.JPG" alt="" srcset="">
+                <img src="泡沫/IMG_9077.JPG" alt="" srcset="">
+                <img src="泡沫/IMG_9078.JPG" alt="" srcset="">
+            </div>
+
+
+            <div class="Bb" style="display: block;">
+                <img src="小幅面海报/正面/小海报1.png" alt="" srcset="">
+                <img src="小幅面海报/正面/小海报2.png" alt="" srcset="">
+                <img src="小幅面海报/正面/小海报3.png" alt="" srcset="">
+                <img src="小幅面海报/正面/小海报4.png" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="塑料/IMG_8679.JPG" alt="" srcset="">
+                <img src="塑料/IMG_8680.JPG" alt="" srcset="">
+                <img src="塑料/IMG_8681.JPG" alt="" srcset="">
+                
+                <img src="塑料/IMG_8683.JPG" alt="" srcset="">
+                <img src="塑料/IMG_8684.JPG" alt="" srcset="">
+                <img src="塑料/IMG_8685.JPG" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="纸板/IMG_8757.JPG" alt="" srcset="">
+                <img src="纸板/IMG_8758.JPG" alt="" srcset="">
+                <img src="纸板/IMG_8759.JPG" alt="" srcset="">
+            </div>
+            <div class="Bb" style="display: block;">
+                <img src="主题.png" alt="" srcset="">
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        const X = document.querySelectorAll('.x');
+        const divBox = document.querySelectorAll('.B>div');
+
+        for (let i = 0; i < X.length; i++) {
+            X[i].addEventListener('click', function() {
+                for (let j = 0; j < divBox.length; j++) {
+                    divBox[j].style.display = 'none';
+                }
+                if (X[i].textContent === '-金属') {
+                    divBox[0].style.display = 'block';
+                } else if (X[i].textContent === '-木材') {
+                    divBox[1].style.display = 'block';
+                } else if (X[i].textContent === '-泡沫') {
+                    divBox[2].style.display = 'block';
+                } else if (X[i].textContent === '-塑料') {
+                    divBox[3].style.display = 'block';
+                } else if (X[i].textContent === '-纸板') {
+                    divBox[4].style.display = 'block';
+                } else if (X[i].textContent === '-主题') {
+                    divBox[5].style.display = 'block';
+                } 
+            });
+        }
+    </script>
+</body>
+</html>
