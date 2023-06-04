@@ -50,7 +50,7 @@
             line-height: 40px;
             text-align: center;
             color: rgb(193, 186, 186);
-            font-size: 25px;
+            font-size: 12px;
 
         }
 
@@ -130,7 +130,7 @@
     <div class="box">
         <div class="A">
             <div class="A_top">
-                <span><a href="">返回</a></span>
+                <span><a href="../index.html">返回</a></span>
             </div>
             <h1 class="A_title">
                 海刺
@@ -142,8 +142,7 @@
                 <p class="x">-展览照片</p>
                 <p>展言</p>
                 <p class="x">-展言</p>
-                <p>照片</p>
-                <p class="x">-照片</p>
+               
                 
             </div>
         </div>
@@ -164,7 +163,6 @@
                 <img src="展览照片/IMG_9161.JPG" alt="" srcset="">
                 <img src="展览照片/IMG_9162.JPG" alt="" srcset="">
                 <img src="展览照片/IMG_9163.JPG" alt="" srcset="">
-                <img src="展览照片/IMG_9164.JPG" alt="" srcset="">
                 <img src="展览照片/IMG_9165.JPG" alt="" srcset="">
                 <img src="展览照片/IMG_9170.JPG" alt="" srcset="">
                 <img src="展览照片/IMG_9171.JPG" alt="" srcset="">
@@ -176,9 +174,7 @@
             <div class="Bb" style="display: block;">
                 <img src="展言/1d4cf07de955f8241d44126ba9bdc8e.png" alt="" srcset="">
             </div>
-            <div class="Bb" style="display: block;">
-                <img src="DSC_2550.png" alt="" srcset="">
-            </div>
+            
         </div>
     </div>
 
@@ -193,12 +189,10 @@
                 }
                 if (X[i].textContent === '-入场测试') {
                     divBox[0].style.display = 'block';
-                } else if (X[i].textContent === '展览照片') {
+                } else if (X[i].textContent === '-展览照片') {
                     divBox[1].style.display = 'block';
                 } else if (X[i].textContent === '-展言') {
                     divBox[2].style.display = 'block';
-                } else if (X[i].textContent === '-照片') {
-                    divBox[3].style.display = 'block';
                 } 
             });
         }
