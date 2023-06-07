@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box>div{
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .A{
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .B{
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+            color: gainsboro;
+        }
+
+        .A_top{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .A_top span a{
+            display: block;
+            width: 60px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: rgb(193, 186, 186);
+            font-size: 12px;
+
+        }
+
+        .A_title{
+            width: 100%;
+            height: 200px;
+            line-height: 200px;
+            font-size: 150px;
+            margin: 20px 0;
+            
+        }
+
+        .textBox{
+            width: 100%;
+
+        }
+
+        .B>div{
+            width: 100%;
+            height: 100%;
+            display: none;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .textBox{
+            padding-left: 20px;
+            box-sizing: border-box;
+            color: #989090;;
+
+        }
+        .textBox p:hover{
+            color: #4f4747;
+        }
+        .textBox .x{
+            text-indent: 1rem;
+            margin: 10px 0;
+        }
+
+        .Ba p{
+            margin-bottom: 30px;
+        }
+        .Ba h2{
+            margin-bottom: 20px;
+        }
+        .B .Bb{
+            padding: 0;
+
+        }
+
+        .B .Bb img{
+            width:100%;
+        }
+
+        .Bc p{
+            margin-bottom: 30px;
+        }
+        .Bc h2{
+            margin-bottom: 20px;
+        }
+        .Bd{
+            position: relative;
+        }
+        .video {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .video video{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="A">
+            <div class="A_top">
+                <span><a href="../index.html">返回</a></span>
+            </div>
+            <h1 class="A_title">
+                避难所
+            </h1>
+            <div class="textBox">
+                <p>海报</p>
+                <p class="x">-海报</p>
+                <p>视频</p>
+                <p class="x">-视频</p>
+                <p>文字描述</p>
+                <p class="x">-文字描述</p>
+                <p>照片</p>
+                <p class="x">-照片</p>
+                
+            </div>
+        </div>
+        <div class="B">
+            <div class="Bb" style="display: block;">
+                <img src="海报/《避难所》海报.JPG" alt="" srcset="">
+            </div>
+
+            <div class="Bd">
+                <div class="video">
+                        <video src="5月31日.mp4" controls></video>
+                </div>
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="文字描述.png" alt="" srcset="">
+            </div>
+
+
+            <div class="Bb" style="display: block;">
+                <img src="照片/1.JPG" alt="" srcset="">
+                <img src="照片/2.JPG" alt="" srcset="">
+                <img src="照片/3.JPG" alt="" srcset="">
+                <img src="照片/4.JPG" alt="" srcset="">
+                <img src="照片/5.JPG" alt="" srcset="">
+                <img src="照片/6.JPG" alt="" srcset="">
+                <img src="照片/7.JPG" alt="" srcset="">
+                <img src="照片/8.JPG" alt="" srcset="">
+                <img src="照片/9.JPG" alt="" srcset="">
+                <img src="照片/10.JPG" alt="" srcset="">
+            </div>
+
+
+          
+        </div>
+    </div>
+
+    <script>
+        const X = document.querySelectorAll('.x');
+        const divBox = document.querySelectorAll('.B>div');
+
+        for (let i = 0; i < X.length; i++) {
+            X[i].addEventListener('click', function() {
+                for (let j = 0; j < divBox.length; j++) {
+                    divBox[j].style.display = 'none';
+                }
+                if (X[i].textContent === '-海报') {
+                    divBox[0].style.display = 'block';
+                } else if (X[i].textContent === '-视频') {
+                    divBox[1].style.display = 'block';
+                } else if (X[i].textContent === '-文字描述') {
+                    divBox[2].style.display = 'block';
+                } else if (X[i].textContent === '-照片') {
+                    divBox[3].style.display = 'block';
+                } 
+            });
+        }
+    </script>
+</body>
+</html>

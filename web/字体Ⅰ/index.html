@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box>div{
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .A{
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .B{
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+            color: gainsboro;
+        }
+
+        .A_top{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .A_top span a{
+            display: block;
+            width: 60px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: rgb(193, 186, 186);
+            font-size: 12px;
+
+        }
+
+        .A_title{
+            width: 100%;
+            height: 200px;
+            line-height: 200px;
+            font-size: 150px;
+            margin: 20px 0;
+            
+        }
+
+        .textBox{
+            width: 100%;
+
+        }
+
+        .B>div{
+            width: 100%;
+            height: 100%;
+            display: none;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .textBox{
+            padding-left: 20px;
+            box-sizing: border-box;
+            color: #989090;;
+
+        }
+        .textBox p:hover{
+            color: #4f4747;
+        }
+        .textBox .x{
+            text-indent: 1rem;
+            margin: 10px 0;
+        }
+
+        .Ba p{
+            margin-bottom: 30px;
+        }
+        .Ba h2{
+            margin-bottom: 20px;
+        }
+        .B .Bb{
+            padding: 0;
+
+        }
+
+        .B .Bb img{
+            width:100%;
+        }
+
+        .Bc p{
+            margin-bottom: 30px;
+        }
+        .Bc h2{
+            margin-bottom: 20px;
+        }
+        .Bd{
+            position: relative;
+        }
+        .video {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .video video{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="A">
+            <div class="A_top">
+                <span><a href="../index.html">返回</a></span>
+            </div>
+            <h1 class="A_title">
+                字体Ⅰ
+            </h1>
+            <div class="textBox">
+                <p>文字描述</p>
+                <p class="x">-brown</p>
+                <p class="x">-书法练习</p>
+                <p>字体设计</p>
+                <p class="x">-海报</p>
+                <p class="x">-物料</p>
+                <p class="x">-小册子</p>
+                <p class="x">-字母大小写</p>
+              
+            </div>
+        </div>
+        <div class="B">
+            <div class="Bb" style="display: block;">
+                <img src="brown钢笔锚点勾线3.jpg" alt="" srcset="">
+                <img src="brown进化.jpg" alt="" srcset="">
+                <img src="brown一大一小.jpg" alt="" srcset="">
+            </div>
+            <div class="Bb">
+                <img src="书法练习/IMG_0725.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0726.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0727.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0728.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0729.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0730.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0731.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0732.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0733.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0734.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0735.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0736.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0737.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0738.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0739.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0740.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0741.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0742.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0743.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0744.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0745.jpg" alt="" srcset="">
+                <img src="书法练习/IMG_0746.jpg" alt="" srcset="">
+            </div>
+            <div class="Bb">
+                <img src="Doppelganger副本.jpg" alt="" srcset="">
+            </div>
+            <div class="Bb">
+                <img src="物料/DR.jpg" alt="" srcset="">
+                <img src="物料/D.jpg" alt="" srcset="">
+                <img src="物料/E.jpg" alt="" srcset="">
+                <img src="物料/M.jpg" alt="" srcset="">
+                <img src="物料/R.jpg" alt="" srcset="">
+                <img src="物料/万物皆有裂缝.jpg" alt="" srcset="">
+                <img src="物料/万物皆有裂缝副本.jpg" alt="" srcset="">
+                <img src="物料/书.jpg" alt="" srcset="">
+                <img src="物料/场景.jpg" alt="" srcset="">
+                <img src="物料/帆布袋.jpg" alt="" srcset="">
+                <img src="物料/徽章.jpg" alt="" srcset="">
+                <img src="物料/短袖.jpg" alt="" srcset="">
+            </div>
+            <div class="Bb">
+                <img src="小册子/IMG_0747.jpg" alt="" srcset="">
+                <img src="小册子/IMG_0748.jpg" alt="" srcset="">
+                <img src="小册子/IMG_0749.jpg" alt="" srcset="">
+                <img src="小册子/IMG_0750.jpg" alt="" srcset="">
+                <img src="小册子/IMG_0751.jpg" alt="" srcset="">
+            </div>
+            <div class="Bb">
+                <img src="字母大小写.jpg" alt="" srcset="">
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        const X = document.querySelectorAll('.x');
+        const divBox = document.querySelectorAll('.B>div');
+
+        for (let i = 0; i < X.length; i++) {
+            X[i].addEventListener('click', function() {
+                for (let j = 0; j < divBox.length; j++) {
+                    divBox[j].style.display = 'none';
+                }
+                if (X[i].textContent === '-brown') {
+                    divBox[0].style.display = 'block';
+                } else if (X[i].textContent === '-书法练习') {
+                    divBox[1].style.display = 'block';
+                } else if (X[i].textContent === '-海报') {
+                    divBox[2].style.display = 'block';
+                } else if (X[i].textContent === '-物料') {
+                    divBox[3].style.display = 'block';
+                } else if (X[i].textContent === '-小册子') {
+                    divBox[4].style.display = 'block';
+                } else if (X[i].textContent === '-字母大小写') {
+                    divBox[5].style.display = 'block';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

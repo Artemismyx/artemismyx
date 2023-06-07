@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box>div{
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .A{
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .B{
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+            color: gainsboro;
+        }
+
+        .A_top{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .A_top span a{
+            display: block;
+            width: 60px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: rgb(193, 186, 186);
+            font-size: 12px;
+
+        }
+
+        .A_title{
+            width: 100%;
+            height: 200px;
+            line-height: 200px;
+            font-size: 150px;
+            margin: 20px 0;
+            
+        }
+
+        .textBox{
+            width: 100%;
+
+        }
+
+        .B>div{
+            width: 100%;
+            height: 100%;
+            display: none;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .textBox{
+            padding-left: 20px;
+            box-sizing: border-box;
+            color: #989090;;
+
+        }
+        .textBox p:hover{
+            color: #4f4747;
+        }
+        .textBox .x{
+            text-indent: 1rem;
+            margin: 10px 0;
+        }
+
+        .Ba p{
+            margin-bottom: 30px;
+        }
+        .Ba h2{
+            margin-bottom: 20px;
+        }
+        .B .Bb{
+            padding: 0;
+
+        }
+
+        .B .Bb img{
+            width:100%;
+        }
+
+        .Bc p{
+            margin-bottom: 30px;
+        }
+        .Bc h2{
+            margin-bottom: 20px;
+        }
+        .Bd{
+            position: relative;
+        }
+        .video {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .video video{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="A">
+            <div class="A_top">
+                <span><a href="../index.html">返回</a></span>
+            </div>
+            <h1 class="A_title">
+                字体Ⅱ
+            </h1>
+            <div class="textBox">
+                <p>白日梦</p>
+                <p class="x">-A排版</p>
+                <p class="x">-B排版</p>
+                <p class="x">-封面</p>
+                <p>二创设计</p>
+                <p>海底两万里</p>
+                <p class="x">-插画</p>
+                <p class="x">-封皮设计1</p>
+                <p>气球上的星期五</p>
+                <p class="x">-封皮设计2</p>
+                <p>神秘岛</p>
+                <p class="x">-封皮设计3</p>
+                <p>最终汇报</p>
+                <p class="x">-最终汇报</p>
+             
+            </div>
+        </div>
+        <div class="B">
+            <div class="Bb" style="display: block;">
+                <img src="白日梦/A版排版/1.png" alt="" srcset="">
+                <img src="白日梦/A版排版/2.png" alt="" srcset="">
+                <img src="白日梦/A版排版/3.png" alt="" srcset="">
+            </div>
+            <div class="Bb">
+                <img src="白日梦/B版排版/1.png" alt="" srcset="">
+                <img src="白日梦/B版排版/2.png" alt="" srcset="">
+                <img src="白日梦/B版排版/3.png" alt="" srcset="">
+            </div>
+            <div class="Bb">
+                <img src="白日梦/封面/Cover.jpg" alt="" srcset="">
+            </div>
+            <div class="Bb">
+                <img src="二创设计/海底两万里/插画/很多鱼.png" alt="" srcset="">
+                <img src="二创设计/海底两万里/插画/海底世界.png" alt="" srcset="">
+                <img src="二创设计/海底两万里/插画/潜水艇.jpg" alt="" srcset="">
+            </div>
+            <div class="Bb">
+                <img src="二创设计/海底两万里/海底两万里封面.jpg" alt="" srcset="">
+                <img src="二创设计/海底两万里/海底两万里封底.jpg" alt="" srcset="">
+                <img src="二创设计/海底两万里/海底两万里书脊.jpg" alt="" srcset="">
+            </div>
+            <div class="Bb">
+                <img src="二创设计/气球上的星期五/气球上的星期五封面2.jpg" alt="" srcset="">
+                <img src="二创设计/气球上的星期五/气球上的星期五封底.jpg" alt="" srcset="">
+                <img src="二创设计/气球上的星期五/气球上的星期五书脊.jpg" alt="" srcset="">
+            </div>
+            <div class="Bb">
+                <img src="二创设计/神秘岛/神秘岛封面.jpg" alt="" srcset="">                
+                <img src="二创设计/神秘岛/神秘岛封底.jpg" alt="" srcset="">
+                <img src="二创设计/神秘岛/神秘岛书脊.jpg" alt="" srcset="">
+            </div>
+            <div class="Bb">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_01.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_02.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_03.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_04.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_05.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_06.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_07.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_08.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_09.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_10.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_11.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_12.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_13.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_14.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_15.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_16.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_17.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_18.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_19.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_20.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_21.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_22.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_23.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_24.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_25.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_26.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_27.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_28.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_29.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_30.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_31.png" alt="" srcset="">
+                <img src="最终汇报/2022_BIPS-Y2_Typography-II_{Rogue}_Assignment-B_32.png" alt="" srcset="">
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <script>
+        const X = document.querySelectorAll('.x');
+        const divBox = document.querySelectorAll('.B>div');
+
+        for (let i = 0; i < X.length; i++) {
+            X[i].addEventListener('click', function() {
+                for (let j = 0; j < divBox.length; j++) {
+                    divBox[j].style.display = 'none';
+                }
+                if (X[i].textContent === '-A排版') {
+                    divBox[0].style.display = 'block';
+                } else if (X[i].textContent === '-B排版') {
+                    divBox[1].style.display = 'block';
+                } else if (X[i].textContent === '-封面') {
+                    divBox[2].style.display = 'block';
+                } else if (X[i].textContent === '-插画') {
+                    divBox[3].style.display = 'block';
+                } else if (X[i].textContent === '-封皮设计1') {
+                    divBox[4].style.display = 'block';
+                } else if (X[i].textContent === '-封皮设计2') {
+                    divBox[5].style.display = 'block';
+                } else if (X[i].textContent === '-封皮设计3') {
+                    divBox[6].style.display = 'block';
+                }else if (X[i].textContent === '-最终汇报') {
+                    divBox[7].style.display = 'block';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

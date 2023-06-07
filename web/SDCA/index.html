@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box>div{
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .A{
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .B{
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+            color: gainsboro;
+        }
+
+        .A_top{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .A_top span a{
+            display: block;
+            width: 60px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: rgb(193, 186, 186);
+            font-size: 12px;
+
+        }
+
+        .A_title{
+            width: 100%;
+            height: 200px;
+            line-height: 200px;
+            font-size: 150px;
+            margin: 20px 0;
+            
+        }
+
+        .textBox{
+            width: 100%;
+
+        }
+
+        .B>div{
+            width: 100%;
+            height: 100%;
+            display: none;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .textBox{
+            padding-left: 20px;
+            box-sizing: border-box;
+            color: #989090;;
+
+        }
+        .textBox p:hover{
+            color: #4f4747;
+        }
+        .textBox .x{
+            text-indent: 1rem;
+            margin: 10px 0;
+        }
+
+        .Ba p{
+            margin-bottom: 30px;
+        }
+        .Ba h2{
+            margin-bottom: 20px;
+        }
+        .B .Bb{
+            padding: 0;
+
+        }
+
+        .B .Bb img{
+            width:100%;
+        }
+
+        .Bc p{
+            margin-bottom: 30px;
+        }
+        .Bc h2{
+            margin-bottom: 20px;
+        }
+        .Bd{
+            position: relative;
+        }
+        .video {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .video video{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="A">
+            <div class="A_top">
+                <span><a href="../index.html">返回</a></span>
+            </div>
+            <h1 class="A_title">
+                SDCA
+            </h1>
+            <div class="textBox">
+                <p>logo</p>
+                <p class="x">-logo</p>
+                <p>场景</p>
+                <p class="x">-场景</p>
+                <p>品牌色</p>
+                <p class="x">-品牌色</p>
+                <p>纹样</p>
+                <p class="x">-纹样</p>
+                <p>物料</p>
+                <p class="x">-物料</p>
+              
+                
+            </div>
+        </div>
+        <div class="B">
+            <div class="Bb" style="display: block;">
+                <img src="SDCA/Logo/1-马语兮-BIPS Interview_13.png" alt="" srcset="">
+                <img src="SDCA/Logo/1-马语兮-BIPS Interview_14.png.png" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="SDCA/场景/1-马语兮-BIPS Interview_24.png" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="SDCA/品牌色/1-马语兮-BIPS Interview_16.png" alt="" srcset="">
+            </div>
+
+
+            <div class="Bb" style="display: block;">
+                <img src="SDCA/纹样/1-马语兮-BIPS Interview_17.png" alt="" srcset="">
+            </div>
+
+            <div class="Bb" style="display: block;">
+                <img src="SDCA/物料/1-马语兮-BIPS Interview_18.png" alt="" srcset="">
+                <img src="SDCA/物料/1-马语兮-BIPS Interview_19.png" alt="" srcset="">
+                <img src="SDCA/物料/1-马语兮-BIPS Interview_20.png" alt="" srcset="">
+                <img src="SDCA/物料/1-马语兮-BIPS Interview_21.png" alt="" srcset="">
+                <img src="SDCA/物料/1-马语兮-BIPS Interview_22.png" alt="" srcset="">
+                <img src="SDCA/物料/1-马语兮-BIPS Interview_23.png" alt="" srcset="">
+               
+           
+            
+        </div>
+    </div>
+
+    <script>
+        const X = document.querySelectorAll('.x');
+        const divBox = document.querySelectorAll('.B>div');
+
+        for (let i = 0; i < X.length; i++) {
+            X[i].addEventListener('click', function() {
+                for (let j = 0; j < divBox.length; j++) {
+                    divBox[j].style.display = 'none';
+                }
+                if (X[i].textContent === '-logo') {
+                    divBox[0].style.display = 'block';
+                } else if (X[i].textContent === '-场景') {
+                    divBox[1].style.display = 'block';
+                } else if (X[i].textContent === '-品牌色') {
+                    divBox[2].style.display = 'block';
+                } else if (X[i].textContent === '-纹样') {
+                    divBox[3].style.display = 'block';
+                } else if (X[i].textContent === '-物料') {
+                    divBox[4].style.display = 'block';
+                } 
+            });
+        }
+    </script>
+</body>
+</html>
