@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Media Query Demo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="../assets/favicon.png" />
+    <link rel="stylesheet" href="../main.css" />
+    <style>
+      body {
+        background-color: rgb(254, 252, 252);
+        color: White;
+      }
+      p {
+        display: none;
+      }
+      nav {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+      span {
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid rgb(6, 6, 6);
+        background: rgb(255, 13, 0);
+        font-size: 3rem;
+      }
+      
+      @media screen and (max-width: 1280px) {
+        body {
+          background-color: rgb(251, 250, 251);
+        }
+      }
+      
+      @media screen and (max-width: 1080px) {
+        body {
+          background-color: SkyBlue;
+        }
+        nav {
+          flex-flow: column nowrap;
+          align-items: center;
+        }
+      }
+      
+      @media screen and (max-width: 840px) {
+        body {
+          background-color: YellowGreen;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        body {
+          background-color: Khaki;
+        }
+      }
+      
+      @media print {
+        body {
+          background-color: White;
+          color: Black;
+        }
+        p {
+          display: block;
+        }
+        nav {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    
+
+    <p>Congratulations! You just discovered a hidden paragraph.</p>
+
+    <nav>
+      <span>大一</span>
+      <span>大二</span>
+      <span>大三</span>
+      <span>大四</span>
+      <span>大五</span>
+    </nav>
+
+    <a href="../index.html" id="back">back</a>
+  </body>
+</html>
